@@ -3,47 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FITAPP IA - Download</title>
+<title>FitApp IA - Download</title>
 <style>
   body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     text-align: center;
     padding: 40px 20px;
-    background: linear-gradient(to bottom, #f0f4f8, #ffffff);
-    color: #333;
+    background-color: #000000; /* fundo preto */
+    color: white;
   }
+
   img.logo {
     width: 150px;
     margin-bottom: 30px;
   }
+
   h2 {
     font-size: 28px;
     margin-bottom: 50px;
   }
+
   .btn {
-    display: inline-block;
-    padding: 18px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 30px;
     margin: 15px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: white;
-    background-color: #007bff;
-    border: none;
+    background-color: #000000; /* fundo preto */
+    border: 2px solid white;   /* stroke branco */
     border-radius: 12px;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
+
   .btn:hover {
-    background-color: #0056b3;
+    background-color: #222222;
     transform: translateY(-2px);
   }
-  .ios {
-    background-color: #000000;
+
+  .btn img {
+    width: 40px;
+    height: 40px;
   }
-  .ios:hover {
-    background-color: #333333;
+
+  .btn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.1;
+  }
+
+  .btn-text span:first-child {
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  .btn-text span:last-child {
+    font-size: 16px;
+    font-weight: bold;
   }
 </style>
 </head>
@@ -52,10 +74,23 @@
   <!-- Imagem no topo -->
   <img class="logo" src="https://via.placeholder.com/150" alt="FitApp IA Logo">
 
-  <h2>Download FITAPP IA</h2>
+  <h2>Baixe o FITAPP IA</h2>
 
-  <a href="https://play.google.com/store/apps/details?id=com.app.fitappia" class="btn">Versão Android</a>
-  <a href="https://apps.apple.com/pt/app/fitapp-ia/id6749770992?l=en-GB" class="btn ios">Versão iOS</a>
+  <a href="https://play.google.com/store/apps/details?id=com.app.fitappia" class="btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+    <div class="btn-text">
+      <span>Get it on</span>
+      <span>Play Store</span>
+    </div>
+  </a>
+
+  <a href="https://apps.apple.com/pt/app/fitapp-ia/id6749770992?l=en-GB" class="btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Download_on_the_App_Store_Badge.svg" alt="Apple Store">
+    <div class="btn-text">
+      <span>Download on the</span>
+      <span>Apple Store</span>
+    </div>
+  </a>
 
 </body>
 </html>

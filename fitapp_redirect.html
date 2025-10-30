@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitApp IA - Download</title>
+<script>
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  if (/android/i.test(userAgent)) {
+    window.location.href = "https://play.google.com/store/apps/details?id=com.app.fitappia";
+  } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    window.location.href = "https://apps.apple.com/pt/app/fitapp-ia/id6749770992?l=en-GB";
+  } else {
+    document.write('<h2>Baixe o FitApp IA</h2>');
+    document.write('<p><a href="https://play.google.com/store/apps/details?id=com.app.fitappia">Versão Android</a></p>');
+    document.write('<p><a href="https://apps.apple.com/pt/app/fitapp-ia/id6749770992?l=en-GB">Versão iOS</a></p>');
+  }
+</script>
+</head>
+<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
+  <noscript>
+    <h2>Baixe o FitApp IA</h2>
+    <p><a href="https://play.google.com/store/apps/details?id=com.app.fitappia">Versão Android</a></p>
+    <p><a href="https://apps.apple.com/pt/app/fitapp-ia/id6749770992?l=en-GB">Versão iOS</a></p>
+  </noscript>
+</body>
+</html>
